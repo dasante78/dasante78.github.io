@@ -42,7 +42,9 @@ How do you feel about your ????th day as a cashier at Supermart?
 
 
 [[Hungry -&gt;Home]]
+
 [[Nothing. -&gt;Home]]
+
 [[Happy to serve-&gt; Hungry 1]]</tw-passagedata><tw-passagedata pid="6" name=" Hungry 1" tags="" position="202,680" size="100,100">(set: num-type $Hunger to $Hunger + 1)Hunger: $Hunger
 
 &quot;munch...munch...munch...&quot;
@@ -54,7 +56,9 @@ You arrive home after a hard day at work. What do you do?
 
 
 [[Say good night to your Grandma]]
+
 [[Head straight to bed]]
+
 [[Sit on the couch and watch tv]]</tw-passagedata><tw-passagedata pid="8" name="Say good night to your Grandma" tags="" position="311,1005" size="100,100">Hunger: $Hunger
 
 Grandma: &quot;Good night Honey.&quot; 
@@ -77,12 +81,16 @@ You are watching reruns of Martin and your Grandma walks downstairs. You tell he
 
 
 [[Sailing the Stormy High seas]]
+
 (if:visits &lt;= 1)[ [[Walking through a misty forest -&gt;You go to sleep]] ](else:)[Walking through a misty forest]
+
 (if:visits &lt;= 1)[ [[A stranger is following you into a corridor -&gt;You go to sleep]] ](else:)[A stranger is following you into a corridor]</tw-passagedata><tw-passagedata pid="12" name="Sailing the Stormy High seas" tags="" position="464,1375" size="100,100">(enchant: ?Link, (color: navy) )You subordinate comes to you and asks, &quot;Have you had a break,sir?&quot;
 
 
 (if:visits &lt;= 1)[ [[&quot;The cargo is too precious to make haste now&quot; -&gt;You go to sleep]] ](else:)[&quot;The cargo is too precious to make haste now&quot;]
+
 [[&quot;I can if you takeover for me&quot;]]
+
 (if:visits &lt;= 1)[ [[&quot;No&quot;-&gt;You go to sleep]] ](else:)[&quot;No&quot;]</tw-passagedata><tw-passagedata pid="13" name="&quot;I can if you takeover for me&quot;" tags="" position="460,1533" size="100,100">You walk downstairs to the living quarters. You have been sailing for several months carrying cargo of high value. You go to the bathroom to wash your face after a long shift. &quot;It&quot; stares at you. What is &quot;It&quot;?
 
 
@@ -92,7 +100,9 @@ You stumble back and fall through a wall into your bed. You are now awake. What 
 
 
 [[&quot;The precious cargo&quot; -&gt;Work]]
+
 [[Zombi -&gt;Work]]
+
 [[Nothing. You just want to forget it all -&gt;Hunger 2]]</tw-passagedata><tw-passagedata pid="15" name="Work" tags="" position="455,1845" size="100,100">Hunger: $Hunger
 
 You were just about to start your shift but Bossman comes and takes you to the backroom.
@@ -109,6 +119,7 @@ Bossman knows what he is doing is wrong. This time every year you call of for yo
 
 
 [[You: &quot;I can&#39;t it is my Grandfather&#39;s Birthday&quot;]]
+
 [[You: &quot;Fine&quot;. you acquiesced with no challenge -&gt;Ending]] </tw-passagedata><tw-passagedata pid="18" name="You: &quot;I can&#39;t it is my Grandfather&#39;s Birthday&quot;" tags="" position="442,2185" size="100,100">Hunger: $Hunger
 
 Bossman:&quot;No excuses&quot;
@@ -130,20 +141,26 @@ Bossman: &quot;I don&#39;t like to be questioned and YOU know that&quot;
 
 
 [[Fast as Cheetah -&gt;Fast]]
+
 [[Fast as a Jet -&gt;Fast]]
+
 [[Fast as a Lightning Bolt -&gt;Fast]]</tw-passagedata><tw-passagedata pid="22" name="Fast" tags="" position="446,2769" size="100,100">Hunger: ???????
 
 You run out of Supermart confused and dazed. You try to open the door to your car but the door rips straight off. You proceed to run home avoiding attention Why is this happening to you?
 
 
 [[Zombi??]]
+
 [[This is bad dream -&gt;Hunger 3]]
+
 [[I refuse to accept any of this -&gt;Hunger 3]]
 </tw-passagedata><tw-passagedata pid="23" name="Zombi??" tags="" position="427,3063" size="100,100">(enchant: ?Link, (color: navy) )You run home and crawl into bed. It took hours for you to fall asleep due the transformation wearing off and the anxiety of probably losing your job. You then enter a strange dream. What do you hear?
 
 
 [[&quot;Bokor, we have another one for you&quot;]]
+
 (if:visits &lt;= 1)[ [[&quot;Hello, license plate and registration&quot; -&gt;Zombi??]] ](else:)[&quot;Sir, license plate and registration&quot;]
+
 (if:visits &lt;= 1)[ [[&quot;Sorry, that&#39;s my bad. I&#39;ll get you another drink&quot;-&gt;Zombi??]] ](else:)[&quot;Sorry, that&#39;s my bad. I&#39;ll get you another drink&quot;]</tw-passagedata><tw-passagedata pid="24" name="Hunger 3" tags="" position="697,2863" size="100,100">(set: $Hunger to $Hunger + 1)Hunger: $Hunger
 
 &quot;munch...munch...munch...&quot;
@@ -153,11 +170,13 @@ You run out of Supermart confused and dazed. You try to open the door to your ca
 
 
 (if:visits &lt;= 1)[ [[Administer Zombi Cucumber &gt; Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa -&gt;&quot;Bokor, we have another one for you&quot;]] ](else:)[Administer Zombi Cucumber &gt; Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa]
+
 (if:visits &lt;= 1)[ [[insert the loa &gt; Administer Zombi Cucumber &gt; Capture the soul in a possession &gt; Dig up the grave -&gt;&quot;Bokor, we have another one for you&quot;]] ](else:)[insert the loa &gt; Administer Zombi Cucumber &gt; Capture the soul in a possession &gt; Dig up the grave]
+
 [[Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa &gt; Administer Zombi Cucumber]]</tw-passagedata><tw-passagedata pid="26" name="Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa &gt; Administer Zombi Cucumber" tags="" position="427,3367" size="100,100">The overseer takes you over to the corpse and you perform the ritual. What do you see?
 
 
-(if: visits &lt;=1)[[Not you -&gt;Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa &gt; Administer Zombi Cucumber]](if:visits = 2)[[But there is an uncanny resemblence -&gt;Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa &gt; Administer Zombi Cucumber]](if: visits = 3)[[Zombi -&gt;Zombi 2]]</tw-passagedata><tw-passagedata pid="27" name="Zombi 2" tags="" position="427,3545" size="100,100">Hunger: $Hunger
+(if: visits is 1)[[Not you -&gt;Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa &gt; Administer Zombi Cucumber]](if:visits is 2)[[But there is an uncanny resemblence -&gt;Dig up the grave &gt; Capture the soul in a possession &gt; insert the loa &gt; Administer Zombi Cucumber]](if: visits is 3)[[Zombi -&gt;Zombi 2]]</tw-passagedata><tw-passagedata pid="27" name="Zombi 2" tags="" position="427,3545" size="100,100">Hunger: $Hunger
 
 //You dropped the soul container. Something went wrong. //
 
@@ -165,7 +184,9 @@ You wake up suddenly to your Grandmother&#39;s presence. She asks what happened 
 
 
 [[&quot;I don&#39;t know. I freaked out when Bossman told me that I could not take off for Grandpa&#39;s birthday&quot;]]
+
 [[&quot;I don&#39;t really want to talk about&quot;]]
+
 [[&quot;Nothing&quot; -&gt;Hunger 4]]</tw-passagedata><tw-passagedata pid="28" name="&quot;I don&#39;t know. I freaked out when Bossman told me that I could not take off for Grandpa&#39;s birthday&quot;" tags="" position="401,3863" size="100,100">Hunger: $Hunger
 
 Grandmother: &quot;Alright, it is time that we told you about your culture. Dear, come on in&quot;
@@ -183,6 +204,7 @@ Grandma: &quot;Are you sure? I will not force anything on to you that you are no
 
 
 [[&quot;Thanks for being considerate. I just want to get back to work and see if I still have a job&quot; -&gt;Ending]]
+
 [[&quot;Actually, I am terrified. What the hell is happening to me??? -&gt;&quot;I don&#39;t know. I freaked out when Bossman told me that I could not take off for Grandpa&#39;s birthday&quot;]]</tw-passagedata><tw-passagedata pid="30" name="Hunger 4" tags="" position="923,3331" size="100,100">(set: $Hunger to $Hunger + 1)Hunger: $Hunger
 
 &quot;munch...munch...munch...&quot;
@@ -193,8 +215,11 @@ Grandma: &quot;Are you sure? I will not force anything on to you that you are no
 You have just stepped of the plane into Haiti. You decided to go to Haiti at the request of your grandparents to figure out how to deal with &quot;the situation&quot;. There are a couple of things that catch your attention. What are they?(set: $LocalMarketplacetoken to 0)
 
 (if: $LocalMarketplaceToken is 1)[Local Marketplace](else:)[ [[Local Marketplace]] ]
+
 (if: $MotorcrossToken is 1)[Motorcross Park](else:)[ [[Motorcross Park]] ]
+
 (if: $FrenchToken is 1)[//La Supermarché//](else:)[ [[La Supermarché]] ]
+
 (if: visits &gt;= 4)[[You decide to head of to the mountainside village your grandparents told you to go]]</tw-passagedata><tw-passagedata pid="32" name="Ending" tags="" position="1963,3241" size="100,100">Hunger: $Hunger
 
 Who are you?
@@ -206,10 +231,12 @@ Who are you?
 (if: ($ArcToken is 3) and ($BossToken is 0))[ [[Neighborhood Vigilante -&gt;ArcThreeGoodEnding]] ]</tw-passagedata><tw-passagedata pid="33" name="ArcOneZombiEnding" tags="" position="1488,3919" size="100,100">Unfortunately you attempted to get your job back and were given a second chance but a similar situation arose. This time the Zombi consumed you and went out of control. You are now permanently Zombi destined to roam the land and banned from lan guinee.
 
 
-The End.</tw-passagedata><tw-passagedata pid="34" name="ArcOneNeutralEnding" tags="" position="1650,3935" size="100,100">You went back and luckily Bossman was just shocked that you ran out of the room. Unfortunately, you did not get to spend time with your Grandfather on his birthday. You gave him a belated birthday gift with the extra cash you got from working. Something weakily gnaws at you but it does not escape. You always now wonder what it was but do not investigate it further since you are just a simple cashier at Supermart
+The End.
+&lt;audio src=&quot;https://www.dropbox.com/s/eswvya1tbd607al/Zombie%20Eating%20_%20Zombies%20Sound%20Effect.mp3?dl=1&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="34" name="ArcOneNeutralEnding" tags="" position="1646,3935" size="100,100">You went back and luckily Bossman was just shocked that you ran out of the room. Unfortunately, you did not get to spend time with your Grandfather on his birthday. You gave him a belated birthday gift with the extra cash you got from working. Something weakily gnaws at you but it does not escape. You always now wonder what it was but do not investigate it further since you are just a simple cashier at Supermart
 
 
-The End.</tw-passagedata><tw-passagedata pid="35" name="Local Marketplace" tags="" position="1908,84" size="100,100">Hunger: $Hunger
+The End.
+</tw-passagedata><tw-passagedata pid="35" name="Local Marketplace" tags="" position="1908,84" size="100,100">Hunger: $Hunger
 (set: $LocalMarketplaceToken to 1)
 At the local marketplace, you see booths of mangos, soursop, ginep and avocados surrounded by members of the community. People carrying their goods on twòkèt, something noted on the brochure guide. All live with discussion and exchange. This stands in stark contrast to rigid transactional relationship you had as a cashier to your client. You decide to venture forth.
 
@@ -235,7 +262,9 @@ You look around and find the local school. You wait until the class is over and 
 Prof. Augustin: &quot;Your identity is something only you can resolve but yes, I can give historical context for your &quot;Zombi&quot; situation. It was actually for that reason I became interested in studying the history of the origin of zombies. I grew up in Haiti around here in the mountainside and later travelled for higher education. I felt as though a part of me was unfulfilled and decided to dedicate my studies to Haitian history. So what would you like to learn about first?&quot;
 
 [[Haiti and Slavery]]
+
 [[Connection between zombies and marronage]]
+
 [[Why do I turn into &quot;Zombi&quot; ?!?!?]]</tw-passagedata><tw-passagedata pid="40" name="Haiti and Slavery" tags="" position="2002,783" size="100,100">(if: $Hunger&gt;=1)[(set: $Hunger to $Hunger - 1)]Hunger: $Hunger
 
 Prof. Augustin: &quot;As a colony of France, Haiti was known as Saint-Domingue. Slavery was brutal and rigid system that forced our ancestors shipped from Africa to farm coffee and sugar. It was through the Haitian Revolution beginning in 1791 that we became the first liberated black nation from slavery. Leaders such as Toussaint Louverture and Jean-Jacques Dessalines served as the political and military forefront of the revolution. However, the intial catalysts to the revolution have origins in the Maroon societies, escaped slaves who went to the Haitian mountain side. Dutty Boukman and Mackandal both maroons and vodoo priests helped stage early rebellions against plantation owners.&quot; 
@@ -257,7 +286,7 @@ Prof. Augustin: &quot;From what I could gather of your family records, I believe
 
 [[You: &quot;I don&#39;t know if I can. It is just too out there for me to accept. I am not ready to just take this at face value. I kinda just want to go home now&quot; -&gt;Hunger 5]]
 
-[[You: &quot;For some reason, this makes complete sense to me. I feel as though a hunger in me has be satiated.&quot;]]</tw-passagedata><tw-passagedata pid="43" name="You: &quot;For some reason, this makes complete sense to me. I feel as though a hunger in me has be satiated.&quot;" tags="" position="1869,1369" size="100,100">Hunger: $Hunger
+[[You: &quot;For some reason, this makes complete sense to me. I feel as though a hunger in me has be satiated.&quot;]]</tw-passagedata><tw-passagedata pid="43" name="You: &quot;For some reason, this makes complete sense to me. I feel as though a hunger in me has be satiated.&quot;" tags="" position="1869,1373" size="100,100">Hunger: $Hunger
 
 Professor Augustin: &quot;Great to hear! If you need anything then just give me a call anytime&quot;
 
@@ -275,7 +304,8 @@ Prof. Augustin: &quot;I am sorry to hear you say that. I thought I could bring y
 [[You: &quot;Thank You&quot; -&gt;Ending]]</tw-passagedata><tw-passagedata pid="46" name="ArcTwoZombiEnding" tags="" position="1814,3939" size="100,100">You attempted to get your job back and were given a second chance but were not given a second chance. You were still living with your grandparents but you were not able to acquire another job. You arrived to every interview late and sleepy since the dreams never stopped. You could not decipher their meaning because you could not accept what they meant. Eventually, you succumbed to the dreams. Now Zombi has taken over you  and left you destined to roam the land and banned from lan guinée.
 
 
-The End.</tw-passagedata><tw-passagedata pid="47" name="ArcTwoNeutralEnding" tags="" position="1958,3931" size="100,100">While you were not able to accept what Prof. Augustin was telling you about your history, you were inspired by him to go to college and major in history with a concentration on Creole studies. Eventually, you might be able to come to terms with your culture and identity. While you still have recurring gnawing sensations, Zombi never emerged again. 
+The End.
+&lt;audio src=&quot;https://www.dropbox.com/s/eswvya1tbd607al/Zombie%20Eating%20_%20Zombies%20Sound%20Effect.mp3?dl=1&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="47" name="ArcTwoNeutralEnding" tags="" position="1958,3931" size="100,100">While you were not able to accept what Prof. Augustin was telling you about your history, you were inspired by him to go to college and major in history with a concentration on Creole studies. Eventually, you might be able to come to terms with your culture and identity. While you still have recurring gnawing sensations, Zombi never emerged again. 
 
 
 The End.</tw-passagedata><tw-passagedata pid="48" name="ACT 3" tags="" position="2985,99" size="100,100">(enchant: ?Link, (color: navy) )(set: $ArcToken to 3)Hunger: $Hunger
@@ -283,14 +313,18 @@ The End.</tw-passagedata><tw-passagedata pid="48" name="ACT 3" tags="" position=
 You go back to your apartment to go to sleep. Once again you fall into a strange dream. Where are you?
 
 (if:visits &lt;= 1)[ [[The coast of Sicily -&gt;ACT 3]] ](else:)[The coast of Sicily]
+
 [[The mountainside of Haiti]]
+
 (if:visits &lt;= 1)[ [[The plains of Idaho -&gt;ACT 3]] ](else:)[The plains of Idaho]</tw-passagedata><tw-passagedata pid="49" name="The mountainside of Haiti" tags="" position="3009,333" size="100,100">(enchant: ?Link, (color: navy) )Hunger: $Hunger
 
 You are speaking to someone who are they and what are they saying?
 
 
 (if:visits &lt;= 1)[ [[A witch and she asks, &quot;Who would you like to be bewitched&quot; -&gt;The mountainside of Haiti]] ](else:)[The coast of Sicily]
+
 (if:visits &lt;= 1)[ [[A pirate and he says, &quot;One move from you and I will take your life and your ship&quot; -&gt;The mountainside of Haiti]] ](else:)[A pirate and he says, &quot;One move from you and I will take your life and your ship&quot;]
+
 [[A priest and he says, &quot;Nice work on escaping brother. Now that you are rested and fed, Do wish to join the cause?&quot;]]</tw-passagedata><tw-passagedata pid="50" name="A priest and he says, &quot;Nice work on escaping brother. Now that you are rested and fed, Do wish to join the cause?&quot;" tags="" position="3001,579" size="100,100">(enchant: ?Link, (color: navy) )Hunger: $Hunger
 
 You agree.
@@ -298,7 +332,9 @@ You agree.
 Priest: &quot;I need to acquire plants for the takedown of the next plantation. Let me test you a bit. What plants would you suggest to make the poison?&quot;
 
 [[Barrabas]]
+
 (if:visits &lt;= 1)[ [[Cow-itch -&gt;A priest and he says, &quot;Nice work on escaping brother. Now that you are rested and fed, Do wish to join the cause?&quot;]] ](else:)[Cow-itch]
+
 (if:visits &lt;= 1)[ [[dasheen -&gt;A priest and he says, &quot;Nice work on escaping brother. Now that you are rested and fed, Do wish to join the cause?&quot;]] ](else:)[dasheen]</tw-passagedata><tw-passagedata pid="51" name="Barrabas" tags="" position="2997,765" size="100,100">Hunger: $Hunger
 
 Priest: &quot;Yes, that is right. It grows in the lower mountains right around here. The other options could be trickier to acquire and leave us open to -&quot;
@@ -314,6 +350,7 @@ Priest: &quot;Run brother before they find you. I will be fine. Even if they cap
 It is still nighttime when you wake up so you decide to take a walk. You walk past //La Supermarché// but it gave you a weird vibe. Something tells you to investigate and you do. The door was still open and you walked in. It still had the oddly sterile vibe of Supermart. You enter the main floor and do not see anything suspicious. Where do you investigate first?
 
 [[Room 1C]]
+
 [[Room 2B]]</tw-passagedata><tw-passagedata pid="53" name="Room 1C" tags="" position="3198,981" size="100,100">Hunger: $Hunger
 
 You walk in but it is just a closet. However you do see odd amounts of packages labeled Cucumber. 
@@ -327,23 +364,28 @@ You walk into the backroom to see a horde of people(???). You walk carefully out
 
 You are startled and try to run away but are overwhelmed by the sheer numbers. You feel like you are being consumed again. This is the one feeling you wished not to experience again. But something is happening. Who are you?
 
-(if: visits &lt;=2)[[You-&gt;zombie]](else:)[[Zombi-&gt;zombie2]]</tw-passagedata><tw-passagedata pid="56" name="zombie2" tags="" position="2996,1485" size="100,100">(set: $BossToken to 0)Hunger: $Hunger
+(if: visits &lt;=2)[[You-&gt;zombie]](if:visits &gt;= 3)[ [[Zombi-&gt;zombie2]] ]</tw-passagedata><tw-passagedata pid="56" name="zombie2" tags="" position="3000,1485" size="100,100">(set: $BossToken to 0)Hunger: $Hunger
 
 (if: visits is 1)[ This time you are given much better control. You are able to outmaneuver the horde. This has given you enough time to realize that these people have been zombified. You conclude that you need to find to salt to get them out of this state. You are quick to run to the spice section and administer the salt. Now, the trapped workers are able to go back to their families and rest in peace. You pick up a red keycard from one of the workers. You can now venture forward ] (if: visits &gt;=1)[ You returned to Room 2B ]
 
 [[Room 2A]]
+
 (if: $Hunger is 0)[ [[Room 2C]] ]
-[[Leave Supermart -&gt;Ending]]
-(if: $greenkeycard is 1)[ [[Room 3B]] ]</tw-passagedata><tw-passagedata pid="57" name="Room 2A" tags="" position="2597,1495" size="100,100">Hunger: $Hunger
 
-(if: visits is 1)You arrive in what looks like an employee lounge. You look around and find a employee log book of each employee and their addresses. You make a note of it.(if: visits &gt;= 1)[ You are in Room 2A ]
+(if: $possessions is 1)[ [[Leave Supermart -&gt;Ending]] ]
+
+(if: ($possessions is 1) and ($greenkeycard is 1))[ [[Room 3B]] ]</tw-passagedata><tw-passagedata pid="57" name="Room 2A" tags="" position="2597,1495" size="100,100">Hunger: $Hunger
+
+(if: visits is 1)[ You arrive in what looks like an employee lounge. You look around and find a employee log book of each employee and their addresses. You make a note of it. ](if: visits &gt;= 1)[ You are in Room 2A ]
 
 
-[[Room 1A]]</tw-passagedata><tw-passagedata pid="58" name="Room 2C" tags="" position="3447,1507" size="100,100">Hunger: $Hunger
+[[Room 1A]]
+
+[[Room 2B -&gt;zombie2]] </tw-passagedata><tw-passagedata pid="58" name="Room 2C" tags="" position="3447,1507" size="100,100">Hunger: $Hunger
 
 You walk into what seems to be an office section. You pick up from one of the desk a copy of //The Serpent and the Rainbow//. Inside, you find a green keycard.(set: $greenkeycard to 1)
 
-[[Room 2B -&gt;zombie2]] </tw-passagedata><tw-passagedata pid="59" name="Room 1A" tags="" position="2601,985" size="100,100">Hunger: $Hunger
+[[Room 2B -&gt;zombie2]] </tw-passagedata><tw-passagedata pid="59" name="Room 1A" tags="" position="2601,985" size="100,100">(set: $possessions to 1)Hunger: $Hunger
 
 You use the red keycard to access Room 1A. You see a large collection of personal items and infer that they are where the zombi spirits are being kept. You then promise to return the belongings to the families and villages of the workers. 
 
@@ -358,12 +400,15 @@ Bossman stood up. He was much taller than you remember. You look around and see 
 What do you do?
 
 [[Try to run and avoid him]]
+
 [[Take him straight on]]
+
 [[Try to negotiate]]
 
-</tw-passagedata><tw-passagedata pid="61" name="ArcThreeGoodEnding" tags="" position="2111,3915" size="100,100">You managed to release the captive workers and let them return to be buried. You remembered to send the possessions back to the families and villages. You returned back home to the States where you were embraced by your grandparents. You told them what you learned and that you felt more connected to your roots. When walking down the street, you encounter a couple of thugs attempting to steal from a convenience store. Without much thought, you moved into action and apprehended the criminals. You were now in full control of both your powers and your identity. But even then you were not sure what to call your self as the Neighborhood Vigilante.
+</tw-passagedata><tw-passagedata pid="61" name="ArcThreeGoodEnding" tags="" position="2111,3915" size="100,100">You managed to release the captive workers and let them return to be buried. You remembered to send the possessions back to the families and villages. You returned back home to the States where you were embraced by your grandparents. You told them what you learned and that you felt more connected to your roots. When walking down the street, you encounter a couple of thugs attempting to steal from a convenience store. Without much thought, you moved into action and apprehended the criminals. You were now in full control of both your powers and your identity. But even then you were not sure what to call yourself as the Neighborhood Vigilante.
 
-The End.</tw-passagedata><tw-passagedata pid="62" name="Try to run and avoid him" tags="" position="2870,2053" size="100,100">Hunger: $Hunger
+The End.
+&lt;audio src=&quot;https://www.dropbox.com/s/v9pd78s06lrnjg1/NIRVANA%20-%20SOMETHING%20IN%20THE%20WAY%20%288-Bit%29.mp3?dl=1&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="62" name="Try to run and avoid him" tags="" position="2870,2053" size="100,100">Hunger: $Hunger
 
 You tried to run but he caught up to you in an instant. He grabbed you by your neck and pummeled you. It was only by the grace of the Zombi transformation that you stayed alive. When Bossman strated to fatigue, you wrestled out of his grip and backed off.
 
